@@ -11,7 +11,7 @@ public class AdminHelper extends HelperWithWebDriverBase {
 	public void login(Admin admin) {	
 		//driver.get(baseUrl + "/mantisbt-1.2.19/login_page.php");
 		openUrl("/");
-		type(By.name("password"), admin.login);
+		type(By.name("username"), admin.login);
 		type(By.name("password"), admin.password);
 		click(By.cssSelector("input.button"));
 	}
